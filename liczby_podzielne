@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x, i, j;
+    
+    cout << "Podaj liczbe: " << endl;
+    cin >> x;
+    
+    i = (-x);
+    j = (x);
+    
+    if (x>0)
+    {
+        for(int y=i; y<=x; y++)
+        {
+            if((y!=0) && (x%y==0))
+            {
+                cout << y << ", ";
+            }
+        }
+    }
+    
+    if (x<0)
+    {
+        for(int y=j; j<=i; j++)
+        {
+            if((j!=0) && (x%j==0))
+            {
+            cout << j << ", ";
+            }
+        }
+    }
+    
+    return 0;
+}
