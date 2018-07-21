@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x;
+    char y, z;
+    
+    cout << "Podaj liczbe calkowita: " << endl;
+    cin >> x;
+    cout << "Podaj pierwsza litere: " << endl;
+    cin >> y;
+    cout << "Podaj druga litere: " << endl;
+    cin >> z;
+    
+    for(int i=1; i<=x; i++)
+    {
+        cout << endl;
+    
+        for(int j=1; j<=x; j++)
+        {
+            cout << y << z;
+        }
+    }
+
+return 0;
+}
