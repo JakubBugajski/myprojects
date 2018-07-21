@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x, i=1, j;
+    char y;
+    
+    cout << "Podaj liczbe: " << endl;
+    cin >> x;
+    
+    cout << "Podaj litere: " << endl;
+    cin >> y;
+    
+    while(i<=x)
+    {
+        cout << endl;
+        j=1;
+        while(j<=i)
+    {
+        cout << y;
+        j++;
+    }
+    
+        i++;
+    }
+
+    return 0;
+}
