@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+
+float przelicznik_c (float stopnie_c)
+{
+float fahr = 9.0/5.0 * stopnie_c + 32.0;
+return fahr;
+}
+
+float przelicznik_f (float stopnie_f)
+{
+float cel = 5.0/9.0 * (stopnie_f - 32.0);
+return cel;
+}
+
+float przelicznik_k (float stopnie_k)
+{
+float cel_kel = stopnie_k + 273.15;
+return cel_kel;
+}
+
+    int main()
+    {
+        int wybor;
+        float cel, fahr, kel;
+        
+    
+        cout << "Jezeli chcesz przeliczyc stopnie Celcjusza na Fahrenheita, wpisz '1', jesli stopnie Fahrenheita na Celcjusza, wpisz '2', jezeli stopnie Celcjusza na Kelwina, wpisz '3'" << endl;
+        cin >> wybor;
+        
+    switch (wybor)
+    {
+    case 1:
+        cout << "Podaj wartosc do przeliczenia: " << endl;
+        cin >> cel;
+        cout << "Wartosc po przeliczeniu wynosi: " << przelicznik_c(cel) << endl;
+    break;
+    case 2: 
+        cout << "Podaj wartosc do przeliczenia: " << endl;
+        cin >> fahr;
+        cout << "Wartosc po przeliczeniu wynosi: " << przelicznik_f(fahr) << endl;
+    break;
+    case 3: 
+        cout << "Podaj wartosc do przeliczenia: " << endl;
+        cin >> kel;
+        cout << "Wartosc po przeliczeniu wynosi: " << przelicznik_k(kel) << endl;
+    break;
+    default: 
+        cout << "Podales nieprawidlowe dane";
+    break;
+    }
+    
+    return 0;
+}
