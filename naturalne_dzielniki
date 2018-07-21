@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x, i;
+    
+    cout << "Podaj liczbę: " << endl;
+    cin >> x;
+    
+    if(x>0)
+    {
+        for(int y=1; y<=x; y++)
+        {
+            if(x%y==0)
+            {
+                i++;
+            }
+        }
+        cout << i;
+    }
+    else
+    {
+        cout << "Podaj liczbę dodatnią." << endl;
+    }
+    
+    return 0;
+}
