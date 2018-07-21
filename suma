@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{ 
+    int x;
+    
+    cout << "Podaj liczbe: " << endl;
+    cin >> x;
+    
+    
+    if(x>0)
+    {
+        cout << "Liczby: " << endl;
+        for (int y=1, i=1; x>=y, x>=i; y++, x--)
+        {
+            if((x%y==0) || (x%i==0))
+            {
+                cout << "(" << y << ")" << "(" << x << ")" << endl;
+            }
+        }
+    }
+    else 
+    {
+        cout << "Podaj liczbe naturalna" << endl;
+    }
+    
+    return 0;
+}
