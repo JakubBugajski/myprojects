@@ -1,0 +1,67 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+    {
+    int x, y;
+    char znak, operacja;
+    
+    do
+    {
+        cout << "Podaj dwie liczby całkowite: " << endl;
+        cin >> x;
+        cin >> y;
+        
+        cout << "Podaj numer operacji matematycznej: " << endl;
+        cout << "*. Mnożenie" << endl;
+        cout << "/. Dzielenie" << endl;
+        cout << "+. Dodawanie" << endl;
+        cout << "-. Odejmowanie" << endl;
+        cout << ":. Dzielenie całkowite" << endl;
+        cout << "%. Dzielenie z resztą" << endl;
+        cout << "p. Pierwiastkowanie" << endl;
+        cout << "m. Potęgowanie" << endl;
+        
+        cin >> operacja;
+    
+    switch(operacja)
+    {
+        case '*':
+            cout << "Wynik mnożenia " << x << " * " << y << " wynosi: " << x * y << endl;
+        break;
+        case '/':
+            cout << "Wynik dzielenia " << x << " / " << y << " wynosi: " << x / y << endl;
+        break;
+        case '+':
+            cout << "Wynik dodawania " << x << " + " << y << " wynosi: " << x + y << endl;
+        break;
+        case '-':
+            cout << "Wynik odejmowania " << x << " - " << y << " wynosi: " << x - y << endl;
+        break;
+        case ':':
+            cout << "Wynik dzielenia całkowitego " << x << " przez " << y << " wynosi: " << x % y << endl;
+        break;
+        case '%':
+            cout << "Wynik dzielenia z resztą " << x << " przez " << y << " wynosi: " << x / y << endl;
+        break;
+        case 'p':
+            cout << "Wynik pierwiastkowania liczby " << x << " wynosi: " << sqrt(x) << 
+        ", natomiast liczby " << y << " wynosi: " << sqrt(y) << endl;
+        break;
+        case 'm':
+            cout << "Wynik potęgowania liczby " << y << " przez liczbę " << x << " wynosi: " << pow(x, y) << endl;
+        break;
+        default:
+            cout << "Podana liczba jest zła. Wybierz ponownie." << endl;
+        break;
+    }
+    
+        cout << "Kliknij dowolny klawisz, jeśli chcesz kontynuować. Kliknij 'N', jeśli chcesz przerwać program"
+        << endl;
+    
+        cin >> znak;
+    
+    } while (znak != 'N');
+}
